@@ -1,0 +1,132 @@
+---
+# aabib FORMAT STYLE
+# https://clang.llvm.org/docs/ClangFormat.html
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+DisableFormat: false
+IndentWidth: 2
+PPIndentWidth: 1
+ColumnLimit: 72
+InsertNewlineAtEOF: true
+# KeepEmptyLines: true
+MaxEmptyLinesToKeep: 1
+# LineEnding:
+UseTab: Never
+
+AlignAfterOpenBracket: BlockIndent
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+  PadOperators: true
+AlignConsecutiveBitFields:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignFunctionDeclarations: true
+  AlignFunctionPointers: true
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCaseColons: true
+AlignEscapedNewlines: LeftWithLastLine
+AlignOperands: AlignAfterOperator
+AlignTrailingComments: Always
+
+# NOTE(AABI): NO IDEA what are these used for
+# AllowAllArgumentsOnNextLine: false
+# AllowAllParametersOfDeclarationOnNextLine: false
+
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseExpressionOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortCompoundRequirementOnASingleLine: false
+AllowShortEnumsOnASingleLine: true
+# AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: true
+AlwaysBreakBeforeMultilineStrings: false
+
+BinPackArguments: true
+BinPackParameters: BinPack
+
+BitFieldColonSpacing: Both
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterCaseLabel: true
+  AfterClass: true
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterStruct: false
+  AfterUnion: true
+  AfterExternBlock: true
+  BeforeCatch: true
+  BeforeElse: true
+  BeforeWhile: true
+  SplitEmptyFunction: false
+  AfterControlStatement: Always
+BreakAfterReturnType: TopLevel
+BreakArrays: false
+BreakBeforeBinaryOperators: All
+# BreakBeforeBraces:
+# BreakBeforeInlineASMColon
+BreakBeforeTernaryOperators: true
+BreakBinaryOperations: Never
+BreakFunctionDefinitionParameters: false
+# BreakInheritanceList:
+
+IndentCaseBlocks: true
+IndentCaseLabels: true
+IndentExportBlock: true
+IndentExternBlock: AfterExternBlock
+IndentGotoLabels: false
+IndentPPDirectives: AfterHash
+IndentWrappedFunctionNames: false
+
+PointerAlignment: Right
+ReferenceAlignment: Right
+
+ReflowComments: IndentOnly
+RemoveEmptyLinesInUnwrappedLines: true
+RemoveSemicolon: false
+RequiresExpressionIndentation: OuterScope
+SeparateDefinitionBlocks: Leave
+SortIncludes: false
+
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+# SpaceAfterOperatorKeyword: false
+# SpaceAroundPointerQualifiers: Default
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: true
+# SpaceBeforeJsonColon: true
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: false
+  AfterForeachMacros: false
+  AfterFunctionDeclarationName: false
+  AfterFunctionDefinitionName: false
+  AfterIfMacros: false
+  # AfterNot: true # LMAO LLVM DOCS SUCK ASS
+SpaceBeforeSquareBrackets: true
+SpaceInEmptyBlock: false
+# SpacesInAngles: Always
+SpacesInContainerLiterals: true
+SpacesInParens: Custom
+SpacesInParensOptions:
+  ExceptDoubleParentheses: false
+  InConditionalStatements: false
+  InCStyleCasts: false
+SpacesInSquareBrackets: false
+---

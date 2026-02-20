@@ -1,0 +1,7 @@
+# temporary folders
+build
+local
+
+# zig related
+.zig-cache
+zig-out
